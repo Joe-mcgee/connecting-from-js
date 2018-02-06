@@ -39,4 +39,6 @@ getPerson(query, (rows) => {
   for (row in rows) {
     console.log('- ' + Object.values(rows[row])[0] + ': ' + Object.values(rows[row])[1] + ' ' + Object.values(rows[row])[2] + ', ' + "born, '" + Object.values(rows[row])[3] + "'");
   }
-})
+});
+
+module.exports.getPerson = getPerson
